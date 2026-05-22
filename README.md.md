@@ -1,0 +1,1 @@
+# This is an Obsidian Vault storing my notes
