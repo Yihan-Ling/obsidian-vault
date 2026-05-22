@@ -1,12 +1,11 @@
+# [{{title}}]({{desktopURI}})
 
-# {{title}}
-[Open in Zotero]({{desktopURI}})
-
-## Metadata
+---
 - **Authors:** {{authors}}
 - **Published:** {{date | format("YYYY")}}
 - **Journal/Conference:** {{ publicationTitle or proceedingsTitle or bookTitle or university or institution }}
 - **Citekey:** `{{citekey}}`
+---
 
 ## Abstract
 > [!abstract]
