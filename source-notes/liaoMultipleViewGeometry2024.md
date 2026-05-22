@@ -1,16 +1,11 @@
+# [Multiple View Geometry Transformers for 3D Human Pose Estimation](zotero://select/library/items/BT7758BP)
 
-# Multiple View Geometry Transformers for 3D Human Pose Estimation
-[Open in Zotero](zotero://select/library/items/BT7758BP)
+ **Authors:** Ziwei Liao, Jialiang Zhu, Chunyu Wang, Han Hu, Steven L. Waslander
+ **Published:** 2024
+ **Journal/Conference:** 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+**Citekey:** `liaoMultipleViewGeometry2024`
 
-```
 ---
-- **Authors:** Ziwei Liao, Jialiang Zhu, Chunyu Wang, Han Hu, Steven L. Waslander
-- **Published:** 2024
-- **Journal/Conference:** 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
-- **Citekey:** `liaoMultipleViewGeometry2024`
----
-```
-
 ## Abstract
 > [!abstract]
 >  ```
@@ -18,6 +13,23 @@
 >  ```
 
 ---
+## Summary
+
+<!-- claude-summary-start -->
+*Pending* 
+<!-- claude-summary-end -->
 
 ## Notes & Highlights
+
+
+
+> [!quote] Highlight (Page 710)
+> Most closely related to our work, MvP [36] extends DETR for multi-view 3D human pose estimation. Similar to PETR [21, 22], it introduces a RayConv operation to integrate the camera parameters into the image features. Although it achieves good in-domain performance when cameras are the same for training and testing, it does not generalize well to different camera arrangements.
+
+
+
+
+
+- **My Note:** Against MvP
+
 

@@ -26,11 +26,9 @@
 > [!quote] Highlight (Page {{annotation.pageLabel}})
 > {{annotation.annotatedText}}
 {% endif %}
-
 {% if annotation.imageRelativePath %}
 ![[{{annotation.imageRelativePath}}]]
 {% endif %}
-
 {% if annotation.comment %}
 - **My Note:** {{annotation.comment}}
 {% endif %}
