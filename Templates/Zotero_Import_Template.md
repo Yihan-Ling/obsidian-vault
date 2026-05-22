@@ -1,22 +1,18 @@
----
-title: "{{title}}"
-authors: {{authors}}
-year: {{date | format("YYYY")}}
-tags: [literature-note, {% for t in tags %}{{t.tag}}{% if not loop.last %}, {% endif %}{% endfor %}]
-aliases: ["{{citekey}}"]
----
 
 # {{title}}
 [Open in Zotero]({{desktopURI}})
 
 ## Metadata
 - **Authors:** {{authors}}
-- **Published:** {{date | format("YYYY-MM-DD")}}
-- **Journal/Conference:** {{publicationTitle}}
+- **Published:** {{date | format("YYYY")}}
+- **Journal/Conference:** {{ publicationTitle or proceedingsTitle or bookTitle or university or institution }}
 - **Citekey:** `{{citekey}}`
 
 ## Abstract
-> {{abstractNote}}
+> [!abstract]
+>  ```
+>  {{abstractNote}}
+>  ```
 
 ---
 
