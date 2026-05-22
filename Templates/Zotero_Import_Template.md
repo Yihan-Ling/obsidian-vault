@@ -1,12 +1,11 @@
 # [{{title}}]({{desktopURI}})
 
----
-- **Authors:** {{authors}}
-- **Published:** {{date | format("YYYY")}}
-- **Journal/Conference:** {{ publicationTitle or proceedingsTitle or bookTitle or university or institution }}
-- **Citekey:** `{{citekey}}`
----
+ **Authors:** {{authors}}
+ **Published:** {{date | format("YYYY")}}
+ **Journal/Conference:** {{ publicationTitle or proceedingsTitle or bookTitle or university or institution }}
+**Citekey:** `{{citekey}}`
 
+---
 ## Abstract
 > [!abstract]
 >  ```
@@ -14,6 +13,12 @@
 >  ```
 
 ---
+
+## Summary
+
+<!-- claude-summary-start -->
+*Pending* 
+<!-- claude-summary-end -->
 
 ## Notes & Highlights
 
