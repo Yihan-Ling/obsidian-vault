@@ -14,14 +14,13 @@
 
 ---
 
-{% persist "notes" %}{% if isFirstImport %}
+{% persist "notes" %}
+{%- if isFirstImport %}
 ## Summary
-
 <!-- claude-summary-start -->
-*Pending* 
+*Pending*
 <!-- claude-summary-end -->
-
-{% endif %}
+{%- endif %}
 {% endpersist %}
 
 ## Notes & Highlights
@@ -37,6 +36,8 @@
 ### From Zotero
 
 {%- for annotation in annotations %}
+
+---
 {%- set callout = "quote" -%}
 {%- if annotation.colorCategory == "Red" %}{%- set callout = "danger" -%}
 {%- elif annotation.colorCategory == "Orange" %}{%- set callout = "warning" -%}
