@@ -13,11 +13,29 @@
 >  ```
 
 ---
+
+%% begin notes %%
 ## Summary
 
 <!-- claude-summary-start -->
 *Pending* 
 <!-- claude-summary-end -->
 
+
+%% end notes %%
+
 ## Notes & Highlights
 
+%% begin obsidian-freeform-notes %%
+
+### Obsidian Notes
+
+<!-- Personal notes not tied to a specific highlight. Survives re-imports. -->
+
+%% end obsidian-freeform-notes %%
+
+### From Zotero
+
+
+
+%% Import Date: 2026-05-22T20:22:42.501-04:00 %%
