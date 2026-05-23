@@ -13,11 +13,16 @@
 >  ```
 
 ---
+
+{% persist "notes" %}{% if isFirstImport %}
 ## Summary
 
 <!-- claude-summary-start -->
 *Pending* 
 <!-- claude-summary-end -->
+
+{% endif %}
+{% endpersist %}
 
 ## Notes & Highlights
 
