@@ -26,9 +26,29 @@
 
 ## Notes & Highlights
 
+{% persist "obsidian-freeform-notes" %}
+{% if isFirstImport %}
+### Obsidian Notes
+
+<!-- Personal notes not tied to a specific highlight. Survives re-imports. -->
+{% endif %}
+{% endpersist %}
+
+### From Zotero
+
 {% for annotation in annotations %}
+{% set callout = "quote" %}
+{% if annotation.colorCategory == "Red" %}{% set callout = "danger" %}
+{% elif annotation.colorCategory == "Orange" %}{% set callout = "warning" %}
+{% elif annotation.colorCategory == "Yellow" %}{% set callout = "note" %}
+{% elif annotation.colorCategory == "Green" %}{% set callout = "success" %}
+{% elif annotation.colorCategory == "Blue" %}{% set callout = "info" %}
+{% elif annotation.colorCategory == "Purple" %}{% set callout = "example" %}
+{% elif annotation.colorCategory == "Magenta" %}{% set callout = "question" %}
+{% elif annotation.colorCategory == "Gray" %}{% set callout = "quote" %}
+{% endif %}
 {% if annotation.annotatedText %}
-> [!quote] Highlight (Page {{annotation.pageLabel}})
+> [!{{callout}}] Highlight (Page {{annotation.pageLabel}})
 > {{annotation.annotatedText}}
 {% endif %}
 {% if annotation.imageRelativePath %}
@@ -37,5 +57,11 @@
 {% if annotation.comment %}
 - **My Note:** {{annotation.comment}}
 {% endif %}
+
+{% persist annotation.id %}
+{% if isFirstImport %}
+<!-- Obsidian-only commentary for this highlight. Survives re-imports. -->
+{% endif %}
+{% endpersist %}
 
 {% endfor %}
