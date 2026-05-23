@@ -24,9 +24,7 @@
 
 %% end notes %%
 
-## Notes & Highlights
-
-%% begin obsidian-freeform-notes %%
+## Notes & Highlights%% begin obsidian-freeform-notes %%
 
 ### Obsidian Notes
 
@@ -36,6 +34,14 @@
 
 ### From Zotero
 
+![[source-notes/wangDirectMultiviewMultiperson2021/image-4-x100-y592.png]]
+- **My Note:** Pipeline%% begin 6GTGC29L %%
 
+%% end 6GTGC29L %%
+> [!note] Highlight (Page 5)
+> It adopts a convolution neural network, designed for 2D pose estimation
+- **My Note:** CNN for each 2D image view%% begin M8Y9YBVS %%
 
-%% Import Date: 2026-05-22T20:22:42.501-04:00 %%
+%% end M8Y9YBVS %%
+
+%% Import Date: 2026-05-22T20:37:20.848-04:00 %%
