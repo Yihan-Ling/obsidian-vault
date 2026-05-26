@@ -71,12 +71,14 @@ MVGFormer directly challenges the prevailing assumption that end-to-end learned 
 ### From Zotero
 
 ---
-> [!note] Highlight (Page 708)
-> The geometry modules are learning-free and handle all viewpoint-dependent 3D tasks geometrically which notably improves the model’s generalization ability.%% begin JE57L372 %%%% end JE57L372 %%
+> [!note] Key Passage / Quote (Page 708)
+> The geometry modules are learning-free and handle all viewpoint-dependent 3D tasks geometrically which notably improves the model’s generalization ability.
+- **My Note:** GM%% begin JE57L372 %%%% end JE57L372 %%
 
 ---
-> [!note] Highlight (Page 708)
-> The appearance modules are learnable and are dedicated to estimating 2D poses from image signals end-to-end which enables them to achieve accurate estimates even when occlusion occurs%% begin H57ZBA5V %%%% end H57ZBA5V %%
+> [!note] Key Passage / Quote (Page 708)
+> The appearance modules are learnable and are dedicated to estimating 2D poses from image signals end-to-end which enables them to achieve accurate estimates even when occlusion occurs
+- **My Note:** AM%% begin H57ZBA5V %%%% end H57ZBA5V %%
 
 ---
 
@@ -85,18 +87,32 @@ MVGFormer directly challenges the prevailing assumption that end-to-end learned 
 Geometric Module (GM)%% begin 4KTSTA8J %%%% end 4KTSTA8J %%
 
 ---
-> [!info] Highlight (Page 708)
+> [!danger] Critical Point / Major Finding (Page 708)
 > What sub-tasks should be addressed geometrically in a learning-free style rather than by neural networks?
 - **My Note:** The core question they try to address%% begin F8JWP9GK %%%% end F8JWP9GK %%
 
 ---
-> [!danger] Highlight (Page 708)
+> [!abstract] Literature Review (Page 708)
 > they struggle to handle severe occlusion due to  This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.  Except for this watermark, it is identical to the accepted version; the final published version of the proceedings is available on IEEE Xplore. the lack of effective priors leading to correspondence failures
 - **My Note:** for geometric approach%% begin 67M782YA %%%% end 67M782YA %%
 
 ---
-> [!danger] Highlight (Page 709)
+> [!abstract] Literature Review (Page 709)
 > learned approaches tend to obtain poor results on new scenes, especially when the testing camera configurations are not seen in training.%% begin XGVE4BXU %%%% end XGVE4BXU %%
+
+---
+> [!note] Key Passage / Quote (Page 709)
+> takes as input a set of initialized queries that encode 3D poses, and iteratively refines them using two modules, the Appearance Module (AM) and Geometry Module (GM).%% begin 2H76GUZH %%%% end 2H76GUZH %%
+
+---
+> [!info] Methods / Study Design (Page 709)
+> In AM, we project a query onto the images to get a set of sampling points, and estimate a more accurate 2D pose from the sampled features
+- **My Note:** AM method%% begin ZNFGSFV5 %%%% end ZNFGSFV5 %%
+
+---
+> [!info] Methods / Study Design (Page 709)
+> GM predicts a refined 3D pose in a learning-free style through triangulation, which in turn is used to update the query
+- **My Note:** GM method%% begin 2ILD5ZKP %%%% end 2ILD5ZKP %%
 
 ---
 
@@ -104,8 +120,8 @@ Geometric Module (GM)%% begin 4KTSTA8J %%%% end 4KTSTA8J %%
 - **My Note:** Framework%% begin AZB6QAA5 %%%% end AZB6QAA5 %%
 
 ---
-> [!note] Highlight (Page 710)
+> [!abstract] Literature Review (Page 710)
 > Most closely related to our work, MvP [36] extends DETR for multi-view 3D human pose estimation. Similar to PETR [21, 22], it introduces a RayConv operation to integrate the camera parameters into the image features. Although it achieves good in-domain performance when cameras are the same for training and testing, it does not generalize well to different camera arrangements.
 - **My Note:** Against MvP%% begin 97GZMPM7 %%%% end 97GZMPM7 %%
 
-%% Import Date: 2026-05-25T19:20:43.483-04:00 %%
+%% Import Date: 2026-05-25T19:34:19.818-04:00 %%

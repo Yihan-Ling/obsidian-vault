@@ -39,17 +39,27 @@
 
 ---
 {%- set callout = "quote" -%}
-{%- if annotation.colorCategory == "Red" %}{%- set callout = "danger" -%}
-{%- elif annotation.colorCategory == "Orange" %}{%- set callout = "warning" -%}
-{%- elif annotation.colorCategory == "Yellow" %}{%- set callout = "note" -%}
-{%- elif annotation.colorCategory == "Green" %}{%- set callout = "success" -%}
-{%- elif annotation.colorCategory == "Blue" %}{%- set callout = "info" -%}
-{%- elif annotation.colorCategory == "Purple" %}{%- set callout = "example" -%}
-{%- elif annotation.colorCategory == "Magenta" %}{%- set callout = "question" -%}
-{%- elif annotation.colorCategory == "Gray" %}{%- set callout = "quote" -%}
-{%- endif %}
+{%- set category = "Highlight" -%}
+
+{%- if annotation.colorCategory == "Yellow" -%}
+  {%- set callout = "note" -%}
+  {%- set category = "Key Passage" -%}
+{%- elif annotation.colorCategory == "Green" -%}
+  {%- set callout = "success" -%}
+  {%- set category = "Key Definition" -%}
+{%- elif annotation.colorCategory == "Blue" -%}
+  {%- set callout = "info" -%}
+  {%- set category = "Methods -%}
+{%- elif annotation.colorCategory == "Red" -%}
+  {%- set callout = "danger" -%}
+  {%- set category = "Critical Point" -%}
+{%- elif annotation.colorCategory == "Gray" -%}
+  {%- set callout = "abstract" -%}
+  {%- set category = "Literature Review" -%}
+{%- endif -%}
+
 {%- if annotation.annotatedText %}
-> [!{{callout}}] Highlight (Page {{annotation.pageLabel}})
+> [!{{callout}}] {{category}} (Page {{annotation.pageLabel}})
 > {{annotation.annotatedText}}
 {%- endif %}
 {%- if annotation.imageRelativePath %}
