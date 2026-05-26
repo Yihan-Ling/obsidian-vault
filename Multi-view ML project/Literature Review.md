@@ -24,7 +24,7 @@
 		1. Projective Attention: Transformer that uses deformable attention to get sample points
 		2. MLP: calculates 2D pixel offset and confidence score
 	- GM: Dedicated to refine 3D pose estimation from triangulation (*not-learnable*) 
-		- Tra
+		- Takes in 2D positions and triangulates new 3D positions
 - Query: Compositional Query
-	- Appearance term: parameters for ML
+	- Appearance term: feature vector, tells ML what it is looking for
 	- Geometric term: stores the 3D position of the joint
