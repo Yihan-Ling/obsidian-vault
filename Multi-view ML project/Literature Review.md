@@ -20,3 +20,7 @@
 
 - Features a `Appearance Module(AM)` and  `Geometry Module(GM)
 	- AM: Dedicated to refine 2D pose estimation from image
+		1. Projective Attention: Transformer that uses deformable attention to get sample points
+		2. MLP: calculates 2D pixel offset and confidence score
+	- GM: Dedicated to refine 3D pose estimation from triangulation (*not-learnable*) 
+	- 
