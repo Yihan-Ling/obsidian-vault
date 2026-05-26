@@ -49,7 +49,7 @@
   {%- set category = "Key Definition" -%}
 {%- elif annotation.colorCategory == "Blue" -%}
   {%- set callout = "info" -%}
-  {%- set category = "Methods -%}
+  {%- set category = "Methods" -%}
 {%- elif annotation.colorCategory == "Red" -%}
   {%- set callout = "danger" -%}
   {%- set category = "Critical Point" -%}

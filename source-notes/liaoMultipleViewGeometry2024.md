@@ -71,12 +71,12 @@ MVGFormer directly challenges the prevailing assumption that end-to-end learned 
 ### From Zotero
 
 ---
-> [!note] Key Passage / Quote (Page 708)
+> [!note] Key Passage (Page 708)
 > The geometry modules are learning-free and handle all viewpoint-dependent 3D tasks geometrically which notably improves the model’s generalization ability.
 - **My Note:** GM%% begin JE57L372 %%%% end JE57L372 %%
 
 ---
-> [!note] Key Passage / Quote (Page 708)
+> [!note] Key Passage (Page 708)
 > The appearance modules are learnable and are dedicated to estimating 2D poses from image signals end-to-end which enables them to achieve accurate estimates even when occlusion occurs
 - **My Note:** AM%% begin H57ZBA5V %%%% end H57ZBA5V %%
 
@@ -87,7 +87,7 @@ MVGFormer directly challenges the prevailing assumption that end-to-end learned 
 Geometric Module (GM)%% begin 4KTSTA8J %%%% end 4KTSTA8J %%
 
 ---
-> [!danger] Critical Point / Major Finding (Page 708)
+> [!danger] Critical Point (Page 708)
 > What sub-tasks should be addressed geometrically in a learning-free style rather than by neural networks?
 - **My Note:** The core question they try to address%% begin F8JWP9GK %%%% end F8JWP9GK %%
 
@@ -101,18 +101,30 @@ Geometric Module (GM)%% begin 4KTSTA8J %%%% end 4KTSTA8J %%
 > learned approaches tend to obtain poor results on new scenes, especially when the testing camera configurations are not seen in training.%% begin XGVE4BXU %%%% end XGVE4BXU %%
 
 ---
-> [!note] Key Passage / Quote (Page 709)
+> [!success] Key Definition (Page 709)
 > takes as input a set of initialized queries that encode 3D poses, and iteratively refines them using two modules, the Appearance Module (AM) and Geometry Module (GM).%% begin 2H76GUZH %%%% end 2H76GUZH %%
 
 ---
-> [!info] Methods / Study Design (Page 709)
+> [!info] Methods (Page 709)
 > In AM, we project a query onto the images to get a set of sampling points, and estimate a more accurate 2D pose from the sampled features
 - **My Note:** AM method%% begin ZNFGSFV5 %%%% end ZNFGSFV5 %%
 
 ---
-> [!info] Methods / Study Design (Page 709)
+> [!info] Methods (Page 709)
 > GM predicts a refined 3D pose in a learning-free style through triangulation, which in turn is used to update the query
 - **My Note:** GM method%% begin 2ILD5ZKP %%%% end 2ILD5ZKP %%
+
+---
+> [!success] Key Definition (Page 709)
+> It takes as input the pre-detected 2D poses and computes a 3D pose by multi-view geometry%% begin Q7RFX3GV %%%% end Q7RFX3GV %%
+
+---
+> [!abstract] Literature Review (Page 709)
+> Most recently, Bartol et al. [1] investigate the generalization performance of triangulation, but only consider a single person in the scene.%% begin JKX9XA7F %%%% end JKX9XA7F %%
+
+---
+> [!abstract] Literature Review (Page 709)
+> Volumetric Representation is another way to introduce geometric information into neural networks by projecting 2D image features into 3D [25, 26]. VoxelPose [31] and its variants [6, 29, 35, 38] are more robust to occlusion by fusing multi-view image features in a voxelized 3D representation.%% begin KXE346I8 %%%% end KXE346I8 %%
 
 ---
 
@@ -124,4 +136,31 @@ Geometric Module (GM)%% begin 4KTSTA8J %%%% end 4KTSTA8J %%
 > Most closely related to our work, MvP [36] extends DETR for multi-view 3D human pose estimation. Similar to PETR [21, 22], it introduces a RayConv operation to integrate the camera parameters into the image features. Although it achieves good in-domain performance when cameras are the same for training and testing, it does not generalize well to different camera arrangements.
 - **My Note:** Against MvP%% begin 97GZMPM7 %%%% end 97GZMPM7 %%
 
-%% Import Date: 2026-05-25T19:34:19.818-04:00 %%
+---
+> [!info] Methods (Page 710)
+> The input is a set of images {It}T  t=1 collected from T cameras. The images are passed to a backbone network to extract the multi-view feature maps%% begin ELHI95MD %%%% end ELHI95MD %%
+
+---
+> [!success] Key Definition (Page 710)
+> We use a compositional query to represent an individual person in the scene. Each query Qk consists of an appearance term Fk ∈ RJ×L and a geometry term Pk ∈ RJ×3 where J and L denote the number of joints and the feature dimension, respectively.
+- **My Note:** Compositional query%% begin 5PNMVHJK %%%% end 5PNMVHJK %%
+
+---
+> [!success] Key Definition (Page 710)
+> Appearance Term We adopt a hierarchical query embedding scheme proposed in [36] to reduce the number of learnable parameters.%% begin SLJ2GZVB %%%% end SLJ2GZVB %%
+
+---
+> [!info] Methods (Page 710)
+> The embeddings are randomly initialized from the standard normal distribution during training.
+- **My Note:** Appearance Term initialization%% begin RB9KHDSK %%%% end RB9KHDSK %%
+
+---
+> [!success] Key Definition (Page 710)
+> The geometry term pj  k ∈ R3 of joint j of  the kth query directly stores its 3D position.%% begin AD48ZP3L %%%% end AD48ZP3L %%
+
+---
+> [!info] Methods (Page 710)
+> We place a T-pose at K uniformly sampled human centers on the ground plane and use the resulting 3D positions of the body joint to initialize pj  k, as in Figure 3 and Figure 4.
+- **My Note:** Geometric Term Initialization%% begin 8J7PLF8S %%%% end 8J7PLF8S %%
+
+%% Import Date: 2026-05-26T10:48:21.408-04:00 %%
