@@ -157,4 +157,40 @@ IAIL resolves a concrete scalability barrier: prior cross-embodiment IL either r
 
 ### From Zotero
 
-%% Import Date: 2026-06-26T11:53:50.297-04:00 %%
+---
+> [!success] Key Definition (Page 1)
+> Intention-Aligned Imitation Learning (IAIL) framework, a behavior adaptation approach that extends the conventional scope of IL by enabling robots to reproduce motions demonstrated by heterogeneous peers, even in previously unseen situations.%% begin 6KAP2CXS %%%% end 6KAP2CXS %%
+
+---
+> [!note] Key Passage (Page 1)
+> Inspired by human cultural learning, IAIL aligns and adapts robot motions on the basis of high-level intentions annotated in natural language rather than by directly copying motor movements.%% begin 89HDDXKM %%%% end 89HDDXKM %%
+
+---
+> [!abstract] Literature Review (Page 1)
+> For differences in physical embodiments, such as robots with different degrees of freedom, body structures, or actuator types, motion correspondence can be established on the basis of invariant body components (7, 8) or transitions in environmental states (9, 10).%% begin LY4MCTAD %%%% end LY4MCTAD %%
+
+---
+> [!abstract] Literature Review (Page 1)
+> For environmental variations, such as different lighting conditions, varied camera views, or interactable objects with changing colors or textures, motion correspondence can be established by finding a common feature space with domain confusion approaches%% begin PVP8P6T3 %%%% end PVP8P6T3 %%
+
+---
+> [!abstract] Literature Review (Page 1)
+> they become inadequate in cases involving substantial differences%% begin BC89U7E5 %%%% end BC89U7E5 %%
+
+---
+> [!info] Methods (Page 2)
+> We define an intention as the goal or outcome of a motion and represent it using a human-annotated language description that abstracts away control and embodiment details. We then construct a shared intention space by aligning motion embeddings with their corresponding annotations, enabling intention similarity to be measured across heterogeneous robots.%% begin 4MSDIM8D %%%% end 4MSDIM8D %%
+
+---
+> [!info] Methods (Page 2)
+> At inference time, a learner retrieves the most demonstration-relevant behavior from its pretrained repertoire by matching intentions.%% begin H4RS4MWZ %%%% end H4RS4MWZ %%
+
+---
+
+![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-2-x36-y425.png]]%% begin ZLMMKQYN %%%% end ZLMMKQYN %%
+
+---
+
+![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-3-x63-y130.png]]%% begin TRIWYKBA %%%% end TRIWYKBA %%
+
+%% Import Date: 2026-06-29T16:21:25.428-04:00 %%
