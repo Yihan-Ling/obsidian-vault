@@ -190,7 +190,30 @@ IAIL resolves a concrete scalability barrier: prior cross-embodiment IL either r
 ![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-2-x36-y425.png]]%% begin ZLMMKQYN %%%% end ZLMMKQYN %%
 
 ---
+> [!abstract] Literature Review (Page 2)
+> This aligns with the cognitive science literature on rational imitation, which suggests that learners, even infants, prioritize reproducing a demonstrator’s inferred goals over their exact movement patterns%% begin 88JLIBLB %%%% end 88JLIBLB %%
+
+---
+> [!note] Key Passage (Page 3)
+> The process consists of three key stages: context-aware motion generation, motion intention extraction, and motion association based on intention similarity.%% begin MRRVAA4P %%%% end MRRVAA4P %%
+
+---
+> [!info] Methods (Page 3)
+> we generate feasible actions for the learner robot i on the basis of its current state, defined as the information perceived by its onboard sensors, which captures its operational context in the environment. Each action is a single command or a sequence of commands that the learner can execute to achieve a specific goal in its environment.
+- **My Note:** Context-aware motion generation%% begin V6DI8XSY %%%% end V6DI8XSY %%
+
+---
+> [!info] Methods (Page 3)
+> both the learner’s generated actions and the demonstrator’s executed actions are projected into a shared motion-intention embedding space. The projection is performed using a motion encoder fψi for the learner and fψj for the demonstrator, each trained jointly with a shared annotation encoder fξ.
+- **My Note:** Motion intention extraction%% begin UVS2YP57 %%%% end UVS2YP57 %%
+
+---
+> [!info] Methods (Page 3)
+> we compare the embedded representation of the demonstrator’s motion with the embeddings of the learner’s candidate actions generated in the first stage. The system selects the candidate whose embedding is closest to the demonstrator’s embedding in intention space, ensuring that the chosen action is executable for the learner and aligned with the demonstrated objective.
+- **My Note:** Motion association based on intention similarity%% begin UDEJZ89C %%%% end UDEJZ89C %%
+
+---
 
 ![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-3-x63-y130.png]]%% begin TRIWYKBA %%%% end TRIWYKBA %%
 
-%% Import Date: 2026-06-29T16:21:25.428-04:00 %%
+%% Import Date: 2026-06-29T18:00:40.643-04:00 %%
