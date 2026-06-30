@@ -100,7 +100,7 @@ Candidates are pooled across all learner robots: $B_{\mathrm{team}} = \bigcup_{i
 Seven heterogeneous robots across two teams:
 
 - *Demonstrators:* Tello (drone), Dual-Arm (bimanual manipulator), Spark (mobile transporter)
-- *Learners:* Cuboat (USV), Single-Arm, Pepper (mobile manipulator), Diablo (height-adjustable mobile)
+	- *Learners:* Cuboat (USV), Single-Arm, Pepper (mobile manipulator), Diablo (height-adjustable mobile)
 
 Task: 5-step monitoring-fetch-deliver pipeline across 30 scenarios with randomized user location, item type, and delivery destination. One-third of scenarios randomly drop a learner robot. 6 of 30 scenarios are completion-infeasible. Evaluations repeated 3 times with different random seeds.
 
@@ -213,7 +213,52 @@ IAIL resolves a concrete scalability barrier: prior cross-embodiment IL either r
 - **My Note:** Motion association based on intention similarity%% begin UDEJZ89C %%%% end UDEJZ89C %%
 
 ---
+> [!info] Methods (Page 3)
+> We evaluated the IAIL framework in a complex real-world environment involving seven heterogeneous robots performing multistep tasks.%% begin ZP2JH6G6 %%%% end ZP2JH6G6 %%
+
+---
+> [!info] Methods (Page 3)
+> The tasks included the following: monitoring user activities at one of four locations (M1 to M4), fetching items at one of three areas (I1 to I3), and delivering items to one of two destinations (D1 and D2).%% begin I5KLJUUJ %%%% end I5KLJUUJ %%
+
+---
 
 ![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-3-x63-y130.png]]%% begin TRIWYKBA %%%% end TRIWYKBA %%
 
-%% Import Date: 2026-06-29T18:00:40.643-04:00 %%
+---
+> [!info] Methods (Page 4)
+> ecause of embodiment and workspace constraints, each robot had access to a subset of areas and supported distinct capabilities. Tello was a drone that could monitor all four locations M1 to M4. Dual-Arm had two manipulators and could retrieve items from the drawer at I3, whereas Single-Arm could retrieve items placed on the table at I2. Spark was a mobile transporter that could deliver items to D1 and D2. Cuboat operated in the water pool and could monitor locations M1 and M2. Diablo was a height-adjustable mobile robot that could monitor all four locations M1 to M4 and deliver items to D1 and D2. Pepper was a mobile manipulator that could access items on the table at I1 and also deliver items to D1 and D2.%% begin W29MFUVS %%%% end W29MFUVS %%
+
+---
+
+![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-4-x82-y383.png]]%% begin QBGEMCWS %%%% end QBGEMCWS %%
+
+---
+> [!success] Key Definition (Page 5)
+> A task was considered successful when the exact demonstrated item, or an item in the same class, was delivered to the correct location.%% begin 98DU76GR %%%% end 98DU76GR %%
+
+---
+> [!note] Key Passage (Page 5)
+> the robots successfully completed an average of 22 of 24 scenarios, achieving an overall success rate of 0.92.%% begin GBV5VRDI %%%% end GBV5VRDI %%
+
+---
+> [!success] Key Definition (Page 5)
+> This metric measured the percentage of instances in which the robots achieved the best possible outcome under three conditions.
+- **My Note:** Adaptation accuracy%% begin HSEG4MX3 %%%% end HSEG4MX3 %%
+
+---
+
+![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-5-x37-y52.png]]%% begin TPBP2CKF %%%% end TPBP2CKF %%
+
+---
+
+![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-6-x36-y52.png]]%% begin HDMYI8EI %%%% end HDMYI8EI %%
+
+---
+> [!note] Key Passage (Page 9)
+> We evaluated the imitation performance between all possible demonstrator-learner robot pairs. On the basis of the alignment results after execution, we assigned a score of 1 if the learner robot monitored the correct target or picked the same item as in the demonstration, a score of 0.5 if the learner robot picked an item in the same class, a score of 0 for skipping the action, and a score of −1 for performing an irrelevant action.%% begin 876D3FXV %%%% end 876D3FXV %%
+
+---
+
+![[source-notes/chenCrossrobotBehaviorAdaptation2026/image-9-x81-y116.png]]%% begin JNGSKRCQ %%%% end JNGSKRCQ %%
+
+%% Import Date: 2026-06-30T00:14:31.380-04:00 %%
